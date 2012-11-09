@@ -8,9 +8,9 @@ By default this plugin uses non-exclusive mode.
 
 # Usage #
 
-  $(".checkbox-group").checkboxGroup({ 
-    exclusive: true   // [true|false] (optional)
-  });
+    $(".checkbox-group").checkboxGroup({ 
+        exclusive: true   // [true|false] (optional)
+    });
   
 It is important to note that there are two CSS classes that must be used
 to identify the _check all_ checkbox (the master control) and the 
@@ -54,27 +54,27 @@ becomes unchecked.
 
 ## The HTML ##
 
-  <div class="checkbox-group">
-    <label>
-      <input type="checkbox" class="check-all" value="all" /> Select All Colors
-    </label>
-    
-    <label>
-      <input type="checkbox" class="check-all-target" value="red" /> Red
-    </label>
-    
-    <label>
-      <input type="checkbox" class="check-all-target" value="yellow" /> Yellow
-    </label>
-    
-    <label>
-      <input type="checkbox" class="check-all-target" value="blue" /> Blue
-    </label>
-  </div>
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" class="check-all" value="all" /> Select All Colors
+        </label>
+
+        <label>
+            <input type="checkbox" class="check-all-target" value="red" /> Red
+        </label>
+
+        <label>
+            <input type="checkbox" class="check-all-target" value="yellow" /> Yellow
+        </label>
+
+        <label>
+            <input type="checkbox" class="check-all-target" value="blue" /> Blue
+        </label>
+    </div>
   
 ## The Javascript ##
 
-  $(".checkbox-group").checkboxGroup();
+    $(".checkbox-group").checkboxGroup();
   
 # License #
 
