@@ -1,6 +1,6 @@
 # Introduction #
 
-*jQuery.checkbox-group* provides an implementation of the _check all_ pattern used
+`jQuery.checkbox-group` provides an implementation of the _check all_ pattern used
 with groups of checkboxes.  This plugin functions in two modes: exclusive and
 non-exclusive.  We'll explain these modes in a moment.  
 
@@ -16,10 +16,10 @@ It is important to note that there are two CSS classes that must be used
 to identify the _check all_ checkbox (the master control) and the 
 _check target_ checkboxes:
 
-*.check-all* identifies the checkbox responsible for acting as the _check all_
+`.check-all` identifies the checkbox responsible for acting as the _check all_
 control.
 
-*.check-all-target* identifies the checkboxes targeted by the selection value
+`.check-all-target` identifies the checkboxes targeted by the selection value
 of the _check all_ control.
 
 It is also important to note that all of these fields must be nested within
@@ -27,27 +27,27 @@ the element(s) identified as the _checkbox group_.
 
 ## Non-exclusive Mode ##
 
-Non-exclusive mode simply means that the *.check-all-target* checkboxes take 
-their checked state from the *.check-all* checkbox, i.e. if the *.check-all* 
-checkbox is checked, then the *.check-all-target* checkboxes will also become
-checked.  This implies the primary role of the *.check-all* checkbox is nothing
+Non-exclusive mode simply means that the `.check-all-target` checkboxes take 
+their checked state from the `.check-all` checkbox, i.e. if the `.check-all` 
+checkbox is checked, then the `.check-all-target` checkboxes will also become
+checked.  This implies the primary role of the `.check-all` checkbox is nothing
 more than that of a master control for the group.
 
 ## Exclusive Mode ##
 
-Exclusive mode means that the *.check-all* checkbox stands on its
+Exclusive mode means that the `.check-all` checkbox stands on its
 own, and that its value is relevant in its own right, and represents a summary
-of the remaining group values.  Put differently, the *.check-all* checkbox is 
-not merely a control used to toggle the checked state of the *.check-all-target* 
+of the remaining group values.  Put differently, the `.check-all` checkbox is 
+not merely a control used to toggle the checked state of the `.check-all-target` 
 checkboxes, rather its value, within the context of an application, is synonymous
-with the total set of values of the *.check-all-target* checkboxes within its 
+with the total set of values of the `.check-all-target` checkboxes within its 
 checkbox group.
 
 An exclusive checkbox group also behaves differently than a non-exclusive group.  In
-an exclusive group, if the *.check-all* checkbox becomes checked, all of the *.check-all-target*
+an exclusive group, if the `.check-all` checkbox becomes checked, all of the `.check-all-target`
 checkboxes become unchecked (in this case, having these remain checked would be redundant.)
-Conversely, if the *.check-all* checkbox is in a checked state, and one or more
-of the *.check-all-target* checkboxes become checked, then the *.check-all* checkbox 
+Conversely, if the `.check-all` checkbox is in a checked state, and one or more
+of the `.check-all-target` checkboxes become checked, then the `.check-all` checkbox 
 becomes unchecked.
   
 # Example #
